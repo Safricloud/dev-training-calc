@@ -1,0 +1,124 @@
+/* Fonts */
+
+@font-face {
+    font-family: Orbitron;
+    src: url(/assets/Orbitron.ttf);
+}
+
+/* CSS Browser Reset */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+.view {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 450px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 1px darkgrey;
+}
+
+.output-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.row {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    background: lightgrey;
+    color: black;
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Orbitron;
+    font-size: 20px;
+    box-shadow: 0px 2px 2px 1px darkgrey;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 10px;
+    transition: color 0.2s;
+}
+
+.button:hover {
+    color: darkblue;
+}
+
+.button:focus, .button:active {
+    box-shadow: 0px 1px 0 0 darkgrey;
+    transform: translateY(1px);
+}
+
+.button:first-child {
+    margin-left: 0;
+}
+
+.button:last-child {
+    margin-right: 0;
+}
+
+.result {
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 3px 4px 2px darkgrey;
+    background-color: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.result>.text {
+    padding: 10px;
+    font-family: Orbitron;
+    letter-spacing: 3px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.logo-section {
+    width: 90%;
+}
+
+.logo-section > img {
+    width: 70px;
+    float: right;
+    padding-inline: 5px;
+    background: deepskyblue;
+    border-radius: 10px;
+}
